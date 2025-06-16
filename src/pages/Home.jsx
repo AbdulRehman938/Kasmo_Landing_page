@@ -3,7 +3,7 @@ import Header1 from '../components/Common/Header1';
 import Header2 from '../components/Common/Header2';
 import { IoIosArrowBack, IoIosArrowForward, IoIosStar } from 'react-icons/io';
 import { FaShip, FaTruckMoving, FaPlane, FaWarehouse } from 'react-icons/fa';
-import { Motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Who_we_are from '../components/home/Who_we_are';
 import Cards_services from '../components/home/Cards_services';
 import Testimonials from '../components/home/Testimonials';
@@ -118,7 +118,7 @@ const Home = () => {
         </button>
 
         <AnimatePresence mode="wait">
-          <Motion.div
+          <motion.div
             key={currentIndex}
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -145,7 +145,7 @@ const Home = () => {
               <div className='w-[4rem] bg-transparent h-full flex justify-center items-center text-[0.9rem] border-r-[0.15rem]'>DOT</div>
               <div className='w-[4rem] bg-transparent h-full flex justify-center items-center text-[0.9rem]'>FMCSA</div>
             </div>
-          </Motion.div>
+          </motion.div>
         </AnimatePresence>
 
         <button
