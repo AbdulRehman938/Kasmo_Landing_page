@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Header1 from '../components/Common/Header1';
 import Header2 from '../components/Common/Header2';
 import { IoIosArrowBack, IoIosArrowForward, IoIosStar } from 'react-icons/io';
-import { FaShip, FaTruckMoving, FaPlane, FaWarehouse, FaQuoteLeft } from 'react-icons/fa';
+import { FaShip, FaTruckMoving, FaPlane, FaWarehouse } from 'react-icons/fa';
 import { Motion, AnimatePresence } from 'framer-motion';
 import Who_we_are from '../components/home/Who_we_are';
 import Cards_services from '../components/home/Cards_services';
