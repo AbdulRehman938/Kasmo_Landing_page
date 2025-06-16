@@ -3,7 +3,7 @@ import Header1 from '../components/Common/Header1';
 import Header2 from '../components/Common/Header2';
 import Header3 from '../components/Common/Header3';
 import Cards_services from '../components/home/Cards_services';
-import Footer from './src/components/Common/Footer.jsx';
+import Footer from '/src/components/Common/Footer.jsx';
 
 const Services = () => {
     const header1Ref = useRef(null);
