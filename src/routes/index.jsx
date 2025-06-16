@@ -7,7 +7,7 @@ import Lease from "../pages/Lease";
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path ="/home" element={<Home />} />
+            <Route path ="/" element={<Home />} />
             <Route path ="/services" element={<Services />} />
             <Route path ="/contact" element={<Contact />} />
             <Route path ="/lease" element={<Lease />} />
