@@ -9,7 +9,7 @@ import Cards_services from '../components/home/Cards_services';
 import Testimonials from '../components/home/Testimonials';
 import Latest_news from '../components/home/Latest_news';
 import Simplify from '../components/home/Simplify';
-import Footer from '/src/components/Common/footer';
+import Footer from 'src/components/Common/footer';
 
 const images = [
   '/src/assets/images/home-slide1.png',
