@@ -66,7 +66,7 @@ const Contact = () => {
                 <Header2 />
 
                 <div className='bg-black w-full h-[35rem] relative flex justify-center items-center mb-[5rem]'>
-                    <img className='h-full w-full object-cover absolute z-10' src="src/assets/images/image home1.png" alt="error" />
+                    <img className='h-full w-full object-cover absolute z-10' src="public/assets/images/image home1.png" alt="error" />
                     <div className='w-full h-full bg-black absolute opacity-[50%] z-20'></div>
                     <div className='w-[50rem] h-[20rem] relative z-50 flex flex-col justify-center items-center px-4'>
                         <h1 className='font-bold text-[4rem] text-white'>Contact Us</h1>

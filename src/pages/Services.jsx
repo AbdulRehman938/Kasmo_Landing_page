@@ -42,7 +42,7 @@ const Services = () => {
 
             {/* Hero Section */}
             <div className='bg-black w-full h-[35rem] relative flex justify-center items-center overflow-hidden mb-[5rem]'>
-                <img className='h-full w-full object-cover absolute z-10' src="src/assets/images/image home1.png" alt="error" />
+                <img className='h-full w-full object-cover absolute z-10' src="public/assets/images/image home1.png" alt="error" />
                 <div className='w-full h-full bg-black absolute opacity-[50%] z-20'></div>
 
                 <div className='w-[50rem] h-[20rem] relative z-50 flex flex-col justify-center text-center items-center overflow-hidden px-4'>
@@ -60,7 +60,7 @@ const Services = () => {
             <Cards_services />
             {/* Second Section */}
             <div className='w-[60%] h-[30rem] mt-[-5rem] mb-[10rem] relative rounded-[2rem] border-[0.2rem] border-gray-500 pb-[1rem]'>
-                <img className='w-full h-full absolute rounded-[2rem] object-cover' src="src/assets/images/services.svg" alt="services" />
+                <img className='w-full h-full absolute rounded-[2rem] object-cover' src="public/assets/images/services.svg" alt="services" />
                 <div className='bg-white w-full h-full object-cover absolute rounded-[2rem] opacity-[95%]'></div>
                 <div className='relative h-[15rem] w-[40rem] left-[15rem] top-[7rem] flex flex-col justify-start align-center text-center items-center'>
                     <h1 className='font-bold text-[3rem]'>Trusted Compliance Partner.</h1>

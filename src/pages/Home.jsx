@@ -12,9 +12,9 @@ import Simplify from '../components/home/Simplify';
 import Footer from '/src/components/Common/Footer.jsx';
 
 const images = [
-  '/src/assets/images/home-slide1.png',
-  '/src/assets/images/home-slide2.png',
-  '/src/assets/images/home-slide3.png',
+  '/public/assets/images/home-slide1.png',
+  '/public/assets/images/home-slide2.png',
+  '/public/assets/images/home-slide3.png',
 ];
 
 const slideText = [
