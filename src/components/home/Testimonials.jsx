@@ -79,7 +79,7 @@ const Testimonials = () => {
         }, 500);
 
         return () => clearTimeout(timeout);
-    }, [index]);
+    });
 
     return (
         <div className="w-full h-[40rem] bg-black mt-[3rem] mb-[10rem] flex justify-center items-center relative">

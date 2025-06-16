@@ -7,7 +7,7 @@ const Contact = () => {
 
      const header1Ref = useRef(null);
         const ticking = useRef(false);
-        const [scrolled, setScrolled] = useState(false);
+        const [setScrolled] = useState(false);
     
         const handleScroll = useCallback(() => {
             if (!ticking.current) {

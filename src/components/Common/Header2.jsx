@@ -7,7 +7,7 @@ const Header2 = ({ scrolled }) => {
   const location = useLocation();
   
 
-  const [activeIndex, setActiveIndex] = useState(() => {
+  const [activeIndex] = useState(() => {
     const current = navLinks.findIndex(link => location.pathname.includes(link.id));
     return current !== -1 ? current : 0;
   });
@@ -32,7 +32,7 @@ const Header2 = ({ scrolled }) => {
 
       if (targetLink) {
         const linkRect = targetLink.getBoundingClientRect();
-        const parentUl = targetLink.offsetParent;
+        // const parentUl = targetLink.offsetParent;
        
 
         const sliderWidthPx = 32;
@@ -53,7 +53,7 @@ const Header2 = ({ scrolled }) => {
       clearTimeout(initialUpdateTimeout);
       window.removeEventListener('resize', updateSliderPosition);
     };
-  }, [hoverIndex, activeIndex, navLinks]);
+  }, [hoverIndex, activeIndex]);
 
   const handleMouseEnter = (index) => {
     if (timeoutRefs.current[index]) {
