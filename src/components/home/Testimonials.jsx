@@ -82,7 +82,7 @@ const Testimonials = () => {
     });
 
     return (
-        <div className="w-full h-[40rem] bg-black mt-[3rem] mb-[10rem] flex justify-center items-center relative">
+        <div className="w-full h-[40rem] bg-black mt-[-5rem] mb-[10rem] flex justify-center items-center relative">
             <img
                 className="absolute top-0 left-0 w-full h-full object-cover opacity-50 z-10"
                 src="https://hellloexpert.com/tf/html/shipter/assets/images/testimonial/1.jpg"

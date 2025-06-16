@@ -29,9 +29,9 @@ const Header1 = forwardRef((props, ref) => {
           <li className='cursor-pointer hover:scale-[130%]'><IoLogoGoogleplus /></li>
         </ul>
         <div className='bg-secondary h-full w-[10rem] flex justify-around items-center text-[1rem] font-semibold'>
-          <span className='text-primary cursor-pointer hover:underline hover:scale-[110%]'>Login</span>
+          <span className='text-orange-500 cursor-pointer hover:underline hover:scale-[110%]'>Login</span>
           or
-          <span className='text-primary cursor-pointer hover:underline hover:scale-[110%]'>Register</span>
+          <span className='text-orange-500 cursor-pointer hover:underline hover:scale-[110%]'>Register</span>
         </div>
       </div>
     </div>

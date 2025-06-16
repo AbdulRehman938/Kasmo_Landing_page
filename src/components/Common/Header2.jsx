@@ -74,8 +74,8 @@ const Header2 = ({ scrolled }) => {
   return (
     <div
       className={`flex justify-around items-center w-full box-border h-[4rem] text-center
-      border-b border-gray-300 z-50 relative transition-all duration-700
-      ${scrolled ? 'bg-blue-700/80' : 'bg-white/30'}`}
+       z-50 relative transition-all duration-700
+      ${scrolled ? 'bg-white' : 'bg-white'}`}
     >
       <div className="flex items-center gap-2">
         <img src="/icon.png" alt="home-head-2" className="h-[2rem]" />
@@ -88,13 +88,13 @@ const Header2 = ({ scrolled }) => {
             <li
               key={item.id}
               ref={el => setLinkRef(el, index)}
-              className="relative text-[0.9rem] font-medium cursor-pointer text-black"
+              className="relative text-[1.2rem] font-medium cursor-pointer text-black"
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
               <Link
                 to={`/${item.id}`}
-                className="inline-block px-2 py-1 hover:text-blue-600 transition-all"
+                className="inline-block px-2 py-1 text-black hover:text-primary hover:scale-[110%] hover:group transition-all "
               >
                 {item.title}
               </Link>
@@ -104,10 +104,10 @@ const Header2 = ({ scrolled }) => {
                   className="fixed z-[9999] bg-white text-black text-xs rounded shadow-lg py-1 px-2 animate-fade-in"
                   style={{
                     left: `${linkRefs.current[index].getBoundingClientRect().left + linkRefs.current[index].getBoundingClientRect().width / 2}px`,
-                    top: `${linkRefs.current[index].getBoundingClientRect().bottom + 8}px`, // Position 8px below the link
-                    transform: 'translateX(-50%)', // Center horizontally
-                    width: '7rem', // Maintain your desired width
-                    minHeight: '4rem', // Use min-height if content varies
+                    top: `${linkRefs.current[index].getBoundingClientRect().bottom + 8}px`, 
+                    transform: 'translateX(-50%)', 
+                    width: '7rem',
+                    minHeight: '4rem', 
                     display: 'flex', 
                     justifyContent: 'center',
                     alignItems: 'center',
@@ -122,14 +122,14 @@ const Header2 = ({ scrolled }) => {
           ))}
 
           <span
-            className="absolute bottom-0 h-[0.2rem] bg-blue-600 transition-all duration-300"
+            className="absolute bottom-0 h-[0.2rem] bg-orange-500 transition-all duration-300 w-[1rem] group hover:bg-black"
             style={sliderStyle}
           />
         </ul>
         
       <div className="w-[3rem] h-full">
         <button className="w-full h-full text-white flex justify-center items-center text-[1.2rem] hover: transition-all duration-300 rounded">
-          <FaSearch className='text-primary' />
+          <FaSearch className='text-orange-500' />
         </button>
       </div>
       </div>

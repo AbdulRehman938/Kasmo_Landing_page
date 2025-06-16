@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <>
             <div className='relative bottom-0 h-[35rem] w-full bg-secondary flex flex-col justify-between align-center items-center'>
-                <div className='w-[60%]  h-[23rem] mt-[2rem] flex flex-row justify-between items-center align-center text-white'>
+                <div className='w-[60%]  h-[23rem] mt-[2rem] flex flex-row justify-between items-left align-left text-white'>
                     <div className='w-[20rem] h-full'>
-                        <div className='h-[5rem] w-full flex text-center justify-center align-center items-center gap-[1rem]'>
+                        <div className='h-[5rem] w-full flex text-left justify-center align-center items-center gap-[1rem]'>
                             <img className='w-auto h-[3rem]' src="public\icon.png" alt="logo" />
                             <span className='font-bold text-[2rem]'>KASMO</span>
                         </div>
@@ -48,8 +48,8 @@ const Footer = () => {
                         <div className='w-full h-[4rem] flex justify-center items-center text-center'>
                             <span className='text-[2rem] font-bold'>Quick Links</span>
                         </div>
-                        <div className='w-full h-[20rem] flex flex-col items-center mt-[1.5rem]'>
-                            <ul className='flex flex-col items-center justify-center text-center'>
+                        <div className='w-full h-[20rem] flex flex-col items-left mt-[1.5rem]'>
+                            <ul className='flex flex-col items-left justify-left text-left'>
                                 <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>About Us</span></li>
                                 <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>Our Services</span></li>
                                 <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>Contact</span></li>

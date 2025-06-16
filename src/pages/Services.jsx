@@ -40,7 +40,7 @@ const Services = () => {
             </div>
 
             {/* Hero Section */}
-            <div className='bg-black w-full h-[35rem] relative flex justify-center items-center overflow-hidden'>
+            <div className='bg-black w-full h-[35rem] relative flex justify-center items-center overflow-hidden mb-[5rem]'>
                 <img className='h-full w-full object-cover absolute z-10' src="src/assets/images/image home1.png" alt="error" />
                 <div className='w-full h-full bg-black absolute opacity-[50%] z-20'></div>
 

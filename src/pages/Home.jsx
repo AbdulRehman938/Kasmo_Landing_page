@@ -131,7 +131,7 @@ const Home = () => {
               <p className='text-[1.1rem] font-medium mt-[1rem]'>CompliancePro simplifies DOT & FMCSA regulations for trucking companies.</p>
               <p className='text-[1rem] font-normal mt-[2rem]'>Call Now: 612-440-8814</p>
             </div>
-            <button className="px-6 py-2 bg-blue-600 relative bottom-[12rem] left-[15rem] hover:bg-blue-700 transition-all duration-300 text-white rounded-lg text-sm font-medium">
+            <button className="px-6 py-2 bg-primary relative bottom-[12rem] left-[15rem] hover:bg-blue-700 transition-all duration-300 text-white rounded-lg text-sm font-medium">
               {slideButtons[currentIndex]}
             </button>
             <div className='bg-transparent w-[15rem] h-[3rem] relative bottom-[12rem] left-[15rem] flex '>
@@ -159,23 +159,26 @@ const Home = () => {
       {/* Services & Who we are */}
       <div id="bottom" className="relative w-full z-20 pt-20 flex flex-col justify-center items-center" style={{ minHeight: '150vh', backgroundColor: '#f3f4f6' }}>
         <div className="flex justify-center relative top-[-7.2rem]">
-          <div className="flex bg-white rounded-t-2xl shadow-lg overflow-hidden">
-            {[
-              { label: "Ocean Freight", icon: <FaShip /> },
-              { label: "Road Freight", icon: <FaTruckMoving /> },
-              { label: "Air Freight", icon: <FaPlane /> },
-              { label: "Warehousing", icon: <FaWarehouse /> },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="group flex flex-col items-center justify-center px-6 py-4 w-[160px] h-[110px] cursor-pointer bg-white text-gray-700 hover:bg-[#00cfff] hover:text-white rounded-t-[2rem] transition-all duration-300"
-              >
-                <div className="text-2xl mb-2">{item.icon}</div>
-                <span className="text-sm font-semibold">{item.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+  <div className="flex bg-white rounded-t-2xl shadow-lg overflow-hidden">
+    {[
+      { label: "Ocean Freight", icon: <FaShip /> },
+      { label: "Road Freight", icon: <FaTruckMoving /> },
+      { label: "Air Freight", icon: <FaPlane /> },
+      { label: "Warehousing", icon: <FaWarehouse /> },
+    ].map((item, idx) => (
+      <motion.div
+        id="group2"
+        key={idx}
+        whileHover={{ y: '1rem' }}
+        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        className="group flex flex-col items-center justify-center px-6 py-4 w-[160px] h-[110px] cursor-pointer bg-white text-gray-700 hover:bg-primary hover:text-white rounded-t-[2rem]"
+      >
+        <div className="text-2xl mb-2">{item.icon}</div>
+        <span className="text-sm font-semibold">{item.label}</span>
+      </motion.div>
+    ))}
+  </div>
+</div>
 
         <Who_we_are />
 

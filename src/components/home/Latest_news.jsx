@@ -27,7 +27,7 @@ const Latest_news = () => {
 
     return (
         <>
-            <div className='w-[65%] h-[35rem] flex flex-col justify-start items-center text-white mt-[3rem] mb-[10rem]'>
+            <div className='w-[65%] h-[35rem] flex flex-col justify-start items-center text-white mt-[-2rem] mb-[10rem]'>
                 <div className='w-[20rem] h-[7rem] flex flex-col justify-start items-center text-center'>
                     <span className='text-primary text-[1.1rem]'>stay with our blog</span>
                     <h1 className='text-black font-bold text-[2.5rem] mt-[-0.5rem]'>Our Latest News</h1>
@@ -47,20 +47,24 @@ const Latest_news = () => {
                                     <div className='absolute inset-0 bg-black opacity-[40%] z-20'></div>
                                 </div>
 
-                                {/* Hover white overlay */}
-                                <div className='absolute inset-0 bg-white z-40
-                                                transform translate-y-full
-                                                group-hover:translate-y-0
-                                                transition-transform duration-500 ease-in-out
-                                                flex items-center justify-center p-4 text-center'>
-                                    <p className='text-black text-lg font-bold'>{card.hoverText}</p>
+                                <div className="absolute inset-0 z-40
+                transform translate-y-full
+                group-hover:translate-y-0
+                transition-transform duration-500 ease-in-out
+                flex items-center justify-center text-center">
+                                    {/* Semi-transparent black overlay */}
+                                    <div className="absolute inset-0 bg-black opacity-50 z-40"></div>
+
+                                    {/* Solid hover text (not affected by opacity) */}
+                                    <p className="text-white text-[1.6rem] font-bold z-50 px-4">{card.hoverText}</p>
                                 </div>
 
+
                                 {/* Bottom text */}
-                                <div className='absolute bottom-0 w-full text-white z-30 flex flex-col justify-center items-center text-center px-[2rem] pb-[2rem]'>
-                                    <h1 className='font-bold text-[1.5rem] mt-[3rem] w-[20rem]'>{card.title}</h1>
-                                    <p className='text-[1.2rem] mt-2'>{card.date}</p>
-                                    <div className='bg-gray-300 w-full h-[0.15rem] mt-4'></div>
+                                <div className="absolute bottom-0 w-full text-white z-20 flex flex-col z-30 justify-center items-center text-center px-[2rem] pb-[2rem] transition-opacity duration-300 group-hover:opacity-0">
+                                    <h1 className="font-bold text-[1.5rem] mt-[3rem] w-[20rem]">{card.title}</h1>
+                                    <p className="text-[1.2rem] mt-2">{card.date}</p>
+                                    <div className="bg-gray-300 w-full h-[0.15rem] mt-4"></div>
                                 </div>
                             </div>
                         ))}

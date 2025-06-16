@@ -5,7 +5,7 @@ import { TiWorld } from 'react-icons/ti'
 const Who_we_are = () => {
     return (
         <>
-            <div className='bg-white w-[80%] ml-[12rem] h-[40rem] mt-[0rem] flex flex-row justify-around items-center text-center align-center rounded-[2rem]'>
+            <div className='bg-white w-[80%] h-[40rem] mt-[-2rem] flex flex-row justify-around items-center text-center align-center rounded-[2rem]'>
                 <img className='h-auto w-[40rem]' src="src\assets\images\image-home2.png" alt="home2" />
                 <div className='bg-transparent h-full w-[40rem] flex flex-col justify-center items-start text-left'>
                     <TiWorld className='text-primary text-[6rem]' />

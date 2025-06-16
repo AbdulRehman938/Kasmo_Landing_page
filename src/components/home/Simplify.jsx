@@ -3,7 +3,7 @@ import React from 'react'
 const Simplify = () => {
   return (
    <>
-    <div className='w-full h-[60rem] mt-[10rem] flex flex-col justify-start align-center items-center gap-[5rem] mb-[30rem]'>
+    <div className='w-full h-[60rem] mt-[5rem] flex flex-col justify-start align-center items-center gap-[5rem] mb-[30rem]'>
         <div className='h-[13rem] w-[50rem] flex flex-col justify-start align-center text-center'>
             <h1 className='font-bold text-[3rem] leading-[3rem]'>Simplify Compliance for Trucking Businesses</h1>
             <p className='mt-[1rem] font-medium text-[1.2rem]'>CompliancePro streamlines DOT & FMCSA regulations for trucking <br /> companies, reducing risks and enabling focus on operations.</p>
@@ -16,7 +16,7 @@ const Simplify = () => {
             </div>
         </div>
 
-        <div className='h-[35rem] mt-[8rem] w-[75%] flex flex-row justify-between items-center align-center px-[0rem] '>
+        <div className='h-[35rem] mt-[2rem] w-[75%] flex flex-row justify-between items-center align-center px-[0rem] '>
             
             <div className='w-[35rem] h-[15rem] flex flex-col justify-left mt-[10rem]'>
                 <h1 className='font-bold text-[2.5rem]'>Reduce Operational Risks</h1>
