@@ -35,9 +35,10 @@ const Services = () => {
             {/* Header */}
             <div ref={header1Ref}><Header1 /></div>
             <Header3 />
-            <div className={`${scrolled ? 'fixed top-0 w-full z-50' : 'relative'}`}>
-                <Header2 scrolled={scrolled} />
-            </div>
+           <div className={`${scrolled ? 'fixed top-0 w-full z-50 flex justify-around' : 'relative'}`}>
+  <Header2 scrolled={scrolled} />
+</div>
+
 
             {/* Hero Section */}
             <div className='bg-black w-full h-[35rem] relative flex justify-center items-center overflow-hidden mb-[5rem]'>

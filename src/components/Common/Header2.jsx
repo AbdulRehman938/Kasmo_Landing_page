@@ -74,7 +74,7 @@ const Header2 = ({ scrolled }) => {
   return (
     <div
       className={`flex justify-around items-center w-full box-border h-[4rem] text-center
-       z-50 relative transition-all duration-700
+       z-50 relative transition-all duration-700 flex
       ${scrolled ? 'bg-white' : 'bg-white'}`}
     >
       <div className="flex items-center gap-2">

@@ -1,7 +1,6 @@
 export const navLinks = [
   { id: "home", title: "Home" },
-  { id: "about", title: "About" },
   { id: "services", title: "Services" },
   { id: "contact", title: "Contact" },
-  { id: "blog", title: "Blog" },
+  { id: "lease", title: "Lease To KASMO" },
 ];

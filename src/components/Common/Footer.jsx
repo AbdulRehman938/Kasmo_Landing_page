@@ -1,9 +1,11 @@
 import React from 'react'
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaYoutubeSquare } from 'react-icons/fa'
 import { LuClock9 } from 'react-icons/lu'
+import { useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div className='relative bottom-0 h-[35rem] w-full bg-secondary flex flex-col justify-between align-center items-center'>
@@ -50,11 +52,10 @@ const Footer = () => {
                         </div>
                         <div className='w-full h-[20rem] flex flex-col items-left mt-[1.5rem]'>
                             <ul className='flex flex-col items-left justify-left text-left'>
-                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>About Us</span></li>
-                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>Our Services</span></li>
-                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>Contact</span></li>
-                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>Blog</span></li>
-                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'><span>Testimonials</span></li>
+                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary' onClick={() => navigate('/lease')}><span>Lease To Casmo</span></li>
+                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary' onClick={() => navigate('/services')}><span>Our Services</span></li>
+                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary' onClick={() => navigate('/contact')}><span>Contact</span></li>
+                                <li className='w-full py-1 cursor-pointer font-medium pt-[1rem] text-[1.1rem] hover:text-primary'onClick={() => navigate('/home')}><span>Home</span></li>
                             </ul>
                         </div>
                     </div>
