@@ -11,12 +11,12 @@ const Cards_services = () => {
                 </div>
                 <div id='cards' className='w-[90%] h-[70rem] grid grid-cols-3 gap-[rem] p-[1rem] pl-[3rem]'>
                     <div className='bg-white h-[30rem] w-[25rem] flex flex-col justify-center items-center text-center align-center rounded-[1rem]'>
-                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\\assets\images\image home3.png" alt="error" />
+                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\assets\images\image-home3.png" alt="error" />
                         <h1 className='font-bold text-[1.8rem] mt-[4rem]'>Expert Guidance</h1>
                         <p className='mt-[2rem] w-[80%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem delectus voluptatum at quaerat quidem dolorum, corrupti atque nesciunt sequi libero ull object-coveram eos omnis, eligendi ad quae explicabo in ea?</p>
                     </div>
                     <div className='bg-white h-[30rem] w-[25rem] flex flex-col justify-center items-center text-center align-center rounded-[1rem]'>
-                        <img className='h-[8rem] w-[8rem] rounded-full object-cover fit-content' src="\\assets\images\image-home4.png" alt="error" />
+                        <img className='h-[8rem] w-[8rem] rounded-full object-cover fit-content' src="\assets\images\image-home4.png" alt="error" />
                         <h1 className='font-bold text-[1.8rem] mt-[4rem]'>Time Saving Solutions</h1>
                         <p className='mt-[2rem] w-[80%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem delectus voluptatum at quaerat quidem dolorum, corrupti atque nesciunt sequi libero ull object-coveram eos omnis, eligendi ad quae explicabo in ea?</p>
                     </div>
