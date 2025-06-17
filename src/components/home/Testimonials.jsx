@@ -3,12 +3,15 @@ import { FaQuoteLeft } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 // Import images from public/assets
-import img1 from '/assets/images/image-home9.png';
-import img2 from '/assets/images/image-home8.png';
-import img3 from '/assets/images/image-home7.png';
-import img4 from '/assets/images/image-home6.png';
-import img5 from '/assets/images/image-home5.png';
-import img6 from '/assets/images/image-home4.png';
+const images = [
+  '/assets/images/image-home9.png',
+  '/assets/images/image-home8.png',
+  '/assets/images/image-home7.png',
+  '/assets/images/image-home6.png',
+  '/assets/images/image-home5.png',
+  '/assets/images/image-home4.png',
+];
+
 
 const Testimonials = () => {
     const [index, setIndex] = useState(1);
