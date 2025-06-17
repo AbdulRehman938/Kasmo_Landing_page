@@ -13,9 +13,10 @@ import Footer from '/src/components/Common/Footer.jsx';
 
 const images = [
   '/assets/images/home-slide1.png',
-  'public\assets\images\home-slide2.png',
-  'public\assets\images\home-slide3.png',
+  '/assets/images/home-slide2.png',
+  '/assets/images/home-slide3.png',
 ];
+
 
 const slideText = [
   "Streamline DOT & FMCSA Compliance",
