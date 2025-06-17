@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className='w-[60%]  h-[23rem] mt-[2rem] flex flex-row justify-between items-left align-left text-white'>
                     <div className='w-[20rem] h-full'>
                         <div className='h-[5rem] w-full flex text-left justify-center align-center items-center gap-[1rem]'>
-                            <img className='w-auto h-[3rem]' src="public\icon.png" alt="logo" />
+                            <img className='w-auto h-[3rem]' src="\icon.png" alt="logo" />
                             <span className='font-bold text-[2rem]'>KASMO</span>
                         </div>
                         <p className='mt-[2rem] font-medium'>There are many variations of Lorem passages of Lorem Ipsum available, but the majority</p>

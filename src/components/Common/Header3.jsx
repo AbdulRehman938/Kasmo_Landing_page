@@ -8,7 +8,7 @@ const Header3 = () => {
         <>
             <div className='w-full h-[7rem] bg-gray-100 relative flex flex-row justify-around align-center text-center items-center pl-[20rem] pr-[15rem]'>
                 <div className='w-[15rem] h-full flex justify-center align-center items-center text-center gap-[0.5rem]'>
-                    <img className='h-[4rem] w-[4rem]' src="public\icon.png" alt="icon" />
+                    <img className='h-[4rem] w-[4rem]' src="\icon.png" alt="icon" />
                     <span className='font-bold text-black text-[1.8rem]'>KASMO</span>
                 </div>
                 <div className='bg-transparent w-[57rem] h-full flex justify-around align-center items-center text-center'>
