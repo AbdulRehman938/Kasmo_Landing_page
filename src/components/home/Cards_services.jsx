@@ -26,17 +26,17 @@ const Cards_services = () => {
                         <p className='mt-[2rem] w-[80%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem delectus voluptatum at quaerat quidem dolorum, corrupti atque nesciunt sequi libero ull object-coveram eos omnis, eligendi ad quae explicabo in ea?</p>
                     </div>
                     <div className='bg-white h-[30rem] w-[25rem] flex flex-col justify-center items-center text-center align-center rounded-[1rem]'>
-                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\\assets\images\image-home6.png" alt="error" />
+                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\assets\images\image-home6.png" alt="error" />
                         <h1 className='font-bold text-[1.8rem] mt-[4rem]'>Logistic Solutions</h1>
                         <p className='mt-[2rem] w-[80%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem delectus voluptatum at quaerat quidem dolorum, corrupti atque nesciunt sequi libero ull object-coveram eos omnis, eligendi ad quae explicabo in ea?</p>
                     </div>
                     <div className='bg-white h-[30rem] w-[25rem] flex flex-col justify-center items-center text-center align-center rounded-[1rem]'>
-                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\\assets\images\image-home8.png" alt="error" />
+                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\assets\images\image-home8.png" alt="error" />
                         <h1 className='font-bold text-[1.8rem] mt-[4rem]'>Fuel Tax & Vehicle Registration Services</h1>
                         <p className='mt-[2rem] w-[80%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem delectus voluptatum at quaerat quidem dolorum, corrupti atque nesciunt sequi libero ull object-coveram eos omnis, eligendi ad quae explicabo in ea?</p>
                     </div>
                     <div className='bg-white h-[30rem] w-[25rem] flex flex-col justify-center items-center text-center align-center rounded-[1rem]'>
-                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\\assets\images\image-home7.png" alt="error" />
+                        <img className='h-[8rem] w-[8rem] rounded-full object-cover' src="\assets\images\image-home7.png" alt="error" />
                         <h1 className='font-bold text-[1.8rem] mt-[4rem]'>Transportation Business Registration</h1>
                         <p className='mt-[2rem] w-[80%]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rem delectus voluptatum at quaerat quidem dolorum, corrupti atque nesciunt sequi libero ullam eos omnis, eligendi ad quae explicabo in ea?</p>
                     </div>
