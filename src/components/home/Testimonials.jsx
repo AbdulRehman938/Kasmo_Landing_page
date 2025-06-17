@@ -17,32 +17,15 @@ const Testimonials = () => {
     const [index, setIndex] = useState(1);
     const testimonialRef = useRef(null);
 
-    const originalTestimonials = [
-        {
-            text: "Excellent service, very reliable and professional!",
-            image: img1,
-        },
-        {
-            text: "Helped our company stay FMCSA compliant easily.",
-            image: img2,
-        },
-        {
-            text: "Customer support was top-notch and always available.",
-            image: img3,
-        },
-        {
-            text: "Highly recommend for trucking businesses.",
-            image: img4,
-        },
-        {
-            text: "Very user-friendly platform. Saves us hours of paperwork.",
-            image: img5,
-        },
-        {
-            text: "The best compliance partner we've had so far!",
-            image: img6,
-        },
-    ];
+   const originalTestimonials = [
+  { text: "Excellent service, very reliable and professional!", image: images[0] },
+  { text: "Helped our company stay FMCSA compliant easily.", image: images[1] },
+  { text: "Customer support was top-notch and always available.", image: images[2] },
+  { text: "Highly recommend for trucking businesses.", image: images[3] },
+  { text: "Very user-friendly platform. Saves us hours of paperwork.", image: images[4] },
+  { text: "The best compliance partner we've had so far!", image: images[5] },
+];
+
 
     const testimonials = [
         originalTestimonials[originalTestimonials.length - 1],
