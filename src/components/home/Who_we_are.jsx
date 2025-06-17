@@ -6,7 +6,7 @@ const Who_we_are = () => {
     return (
         <>
             <div className='bg-white w-[80%] h-[40rem] mt-[-2rem] flex flex-row justify-around items-center text-center align-center rounded-[2rem]'>
-                <img className='h-auto w-[40rem] object-cover fit-content' src="\\assets\images\image-home2.png" alt="error" />
+                <img className='h-auto w-[40rem] object-cover fit-content' src="/assets/images/image-home2.png" alt="error" />
                 <div className='bg-transparent h-full w-[40rem] flex flex-col justify-center items-start text-left'>
                     <TiWorld className='text-primary text-[6rem]' />
                     <h1 className='font-bold text-black text-[2.5rem]'>Who We Are?</h1>
