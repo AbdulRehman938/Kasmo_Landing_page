@@ -34,11 +34,11 @@ const slideButtons = [
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scrolled, setScrolled] = useState(false);
- 
+
 
   const imageContainerRef = useRef(null);
   const header1Ref = useRef(null);
- 
+
   const ticking = useRef(false);
 
   const nextSlide = () => {
@@ -49,28 +49,28 @@ const Home = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-    
-    useEffect(() => {
-      const container = imageContainerRef.current;
-      if (container) {
-        container.style.transition = 'transform 0.5s ease-in-out';
-        container.style.transform = `translateX(-${currentIndex * 100}%)`;
-      }
-    }, [currentIndex]);
-  
-    const handleScroll = useCallback(() => {
-      if (!ticking.current) {
-        ticking.current = true;
-        window.requestAnimationFrame(() => {
-          const header1Height = header1Ref.current ? header1Ref.current.offsetHeight : 0;
-          const currentScrollY = window.scrollY;
-          setScrolled(currentScrollY > header1Height);
-          ticking.current = false;
-        });
-      }
-    }, []);
 
-      useEffect(() => {
+  useEffect(() => {
+    const container = imageContainerRef.current;
+    if (container) {
+      container.style.transition = 'transform 0.5s ease-in-out';
+      container.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  }, [currentIndex]);
+
+  const handleScroll = useCallback(() => {
+    if (!ticking.current) {
+      ticking.current = true;
+      window.requestAnimationFrame(() => {
+        const header1Height = header1Ref.current ? header1Ref.current.offsetHeight : 0;
+        const currentScrollY = window.scrollY;
+        setScrolled(currentScrollY > header1Height);
+        ticking.current = false;
+      });
+    }
+  }, []);
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -160,26 +160,26 @@ const Home = () => {
       {/* Services & Who we are */}
       <div id="bottom" className="relative w-full z-20 pt-20 flex flex-col justify-center items-center" style={{ minHeight: '150vh', backgroundColor: '#f3f4f6' }}>
         <div className="flex justify-center relative top-[-7.2rem]">
-  <div className="flex bg-white rounded-t-2xl shadow-lg overflow-hidden">
-    {[
-      { label: "Ocean Freight", icon: <FaShip /> },
-      { label: "Road Freight", icon: <FaTruckMoving /> },
-      { label: "Air Freight", icon: <FaPlane /> },
-      { label: "Warehousing", icon: <FaWarehouse /> },
-    ].map((item, idx) => (
-      <motion.div
-        id="group2"
-        key={idx}
-        whileHover={{ y: '1rem' }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        className="group flex flex-col items-center justify-center px-6 py-4 w-[160px] h-[110px] cursor-pointer bg-white text-gray-700 hover:bg-primary hover:text-white rounded-t-[2rem]"
-      >
-        <div className="text-2xl mb-2">{item.icon}</div>
-        <span className="text-sm font-semibold">{item.label}</span>
-      </motion.div>
-    ))}
-  </div>
-</div>
+          <div className="flex bg-white rounded-t-2xl shadow-lg overflow-hidden">
+            {[
+              { label: "Ocean Freight", icon: <FaShip /> },
+              { label: "Road Freight", icon: <FaTruckMoving /> },
+              { label: "Air Freight", icon: <FaPlane /> },
+              { label: "Warehousing", icon: <FaWarehouse /> },
+            ].map((item, idx) => (
+              <motion.div
+                id="group2"
+                key={idx}
+                whileHover={{ y: '1rem' }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                className="group flex flex-col items-center justify-center px-6 py-4 w-[160px] h-[110px] cursor-pointer bg-white text-gray-700 hover:bg-primary hover:text-white rounded-t-[2rem]"
+              >
+                <div className="text-2xl mb-2">{item.icon}</div>
+                <span className="text-sm font-semibold">{item.label}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         <Who_we_are />
 
@@ -188,9 +188,9 @@ const Home = () => {
         <Cards_services />
 
         {/* Testimonials */}
-       <Testimonials />
+        <Testimonials />
 
-       <Latest_news />
+        <Latest_news />
 
 
       </div>

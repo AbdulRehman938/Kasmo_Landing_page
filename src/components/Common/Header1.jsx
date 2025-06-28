@@ -14,9 +14,9 @@ const Header1 = forwardRef((props, ref) => {
         id='left-div'
         className='bg-trasnparent w-[25rem] h-full flex justify-center items-center flex-row gap-[1rem]'
       >
-            <LuClock9 className='text-primary' />
-          Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed
-      
+        <LuClock9 className='text-primary' />
+        Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed
+
       </div>
       <div
         id='right-div'
